@@ -1,5 +1,10 @@
+const AppId = 'c5a511f8c8c9cb56da94da36ea4f4cc5';
+
+
+// --- XMLHttpRequest ---
+
 const xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Lublin,%20pl&APPID=c5a511f8c8c9cb56da94da36ea4f4cc5', true);
+xhr.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=Lublin,%20pl&APPID=${AppId}`, true);
 xhr.send();
 xhr.onload = () => {
     if (xhr.status === 200) {
@@ -15,8 +20,9 @@ xhr.onload = () => {
     }
 }
 
+// --- FETCH ---
 
-fetch("http://api.openweathermap.org/data/2.5/forecast?q=Lublin,%20pl&APPID=c5a511f8c8c9cb56da94da36ea4f4cc5")
+fetch(`http://api.openweathermap.org/data/2.5/forecast?q=Lublin,%20pl&APPID=${AppId}`)
 .then(res => {
     if (res.ok) {
         return res.json();
