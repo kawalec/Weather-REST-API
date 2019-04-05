@@ -46,3 +46,5 @@ fetch(`http://api.openweathermap.org/data/2.5/forecast?q=Lublin,%20pl&APPID=${Ap
     document.querySelector('#week').innerHTML = week;
 })
 .catch(err => console.dir(err))
+
+document.querySelector('#today').innerHTML = new Date().toISOString().slice(0,10);
