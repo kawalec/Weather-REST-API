@@ -8,14 +8,15 @@ let chart = new Chart(ctx, {
         datasets: [{
             label: 'Temperature (°C)',
             data: [7.54, 6.57, 8.25, 13.85, 15.89, 15.31, 11.97, 9.38],
-            backgroundColor: 'darkblue',
-            borderColor: 'darkblue',
+            backgroundColor: '#50B0FF',
+            borderColor: '#50B0FF',
             fill: false,
-            pointHoverBackgroundColor: 'darkblue'
+            pointHoverBackgroundColor: '#50B0FF'
         }],
         labels: ['00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00']
     },
     options: {
+        responsive: true,
         title: {
             display: false,
             fontColor: 'navy blue',
@@ -31,18 +32,8 @@ let chart = new Chart(ctx, {
         },
         tooltips: {
             enabled: true,
+            intersect: false,
             mode: 'nearest',
-            callbacks: {
-                labelColor: function(tooltipItem, chart) {
-                    return {
-                        borderColor: 'rgba(75, 192, 192, 0.2)',
-                        backgroundColor: 'rgba(75, 192, 192, 0.2)'
-                    };
-                },
-                labelTextColor: function(tooltipItem, chart) {
-                    return '#fff';
-                }
-            }
         },
         scales: {
             yAxes: [{

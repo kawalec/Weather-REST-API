@@ -1,13 +1,3 @@
-#day, #week {
-    width: 250px;
-    height: 100%;
-    border: 2px solid #ccc;
-    margin: 20px;
-    padding: 10px;
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-}
 .card {
     position: absolute;
     top: 7vh;
@@ -18,7 +8,16 @@
     position: absolute;
     top: 5vh;
     left: 18vw;
-    height:40vh; 
     width:40vw;
 }
 
+#week {
+    width: 250px;
+    height: 100%;
+    border: 2px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
