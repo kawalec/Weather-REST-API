@@ -1,23 +1,71 @@
+body {
+    background-image: url('img/bg.jpg');
+}
+
 .card {
     position: absolute;
-    top: 7vh;
+    top: 10vh;
     left: 1vw;
 }
 
 #temp-chart {
     position: absolute;
     top: 5vh;
-    left: 18vw;
+    left: 20vw;
     width:40vw;
 }
 
 #week {
     width: 250px;
-    height: 100%;
+    height: 750px;
+    overflow: hidden;
     border: 2px solid #ccc;
     margin: 20px;
     padding: 10px;
     position: absolute;
     top: 1vh;
     right: 1vw;
+}
+
+#rain-table {
+    width: 37vw;
+    height: 10vh;
+    position: absolute;
+    top: 45vh;
+    left: 22vw;
+    display: flex;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #000; */
+}
+
+#ico1 {
+    background: url('img/ico.png') -16px -20px;
+}
+
+#ico2 {
+    background: url('img/ico.png') -139px -20px;
+}
+
+#ico3 {
+    background: url('img/ico.png') -272px -26px;
+}
+
+#ico4 {
+    background: url('img/ico.png') -16px -150px;
+}
+
+#ico5 {
+    background: url('img/ico.png') -16px -285px;
+}
+
+#ico6 {
+    background: url('img/ico.png') -293px -280px;
+}
+
+#ico7 {
+    background: url('img/ico.png') -272px -155px;
 }
