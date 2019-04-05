@@ -42,30 +42,29 @@ body {
     /* border: 1px solid #000; */
 }
 
-#ico1 {
+.sunny {
     background: url('img/ico.png') -16px -20px;
 }
 
-#ico2 {
+.clouds {
     background: url('img/ico.png') -139px -20px;
 }
 
-#ico3 {
+.clear {
     background: url('img/ico.png') -272px -26px;
 }
-
-#ico4 {
+.snow {
     background: url('img/ico.png') -16px -150px;
 }
 
-#ico5 {
+.rain {
     background: url('img/ico.png') -16px -285px;
 }
 
-#ico6 {
+.wind {
     background: url('img/ico.png') -293px -280px;
 }
 
-#ico7 {
+.storm {
     background: url('img/ico.png') -272px -155px;
 }
